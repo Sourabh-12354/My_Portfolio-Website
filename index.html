@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfoliio Website</title>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navigation section-->
+    <nav class="navbar">
+        <div class="maxwidth">
+            <!--Used img tag For logo image-->
+            <div class="logo">
+                <img src="images/Souhardo-Tech-logos_black.png" width="20%">
+            </div>
+            <nav>
+                <!--navigation bar-->
+                <ul class="menu">
+                    <!--Used Unordered List for navigation menu-->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login_page.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+
+    <!--Home Section-->
+    <section class="home" id="home">
+        <div class="maxwidth">
+            <div class="home-content">
+                <!--Used Two Text-->
+                <div class="text-1">Hello,My name is,</div>
+                <div class="text-2">Sourabh Roy Biswes</div>
+                <div class="display">
+                    <!--Used a Heading and span(using span will automation text by javascript.)-->
+                    <h1>I'm a <span class="typing"></span></h1>
+                </div>
+                <!--Used a button.-->
+                <a href="hire.html">
+                <button id="btn-hire">Hire Me</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--About Section-->
+    <section>
+        <div class="about-content" id="about">
+            <!--Used img tag for image adding-->
+            <img src="images/formal-3.png" alt="My_Images">
+            <div class="about-text">
+                <!--Used p tag for paragraph-->
+                <p>About Me</p>
+                <p>Developer & Designer</p>
+                <p>Hello,My name is Sourabh Rao Biswes.I am a Developer and also a Designer.If you have any project or if you want to make a software or mobile application for your business contact with me.I will make it as soon as possible.You really like my work.,if you don't I will change this until you like,I will give you best satisfaction result.</p>
+                <p>I am a Developer and also a Designer.If you have any project or if you want to make a software or mobile application for your business contact with me.I will make it as soon as possible.</p>
+                <a href="hire.html">
+                    <button id="btn-hire">Hire Me</button>
+                </a>
+                <!--Used button for add button.-->
+                <a href="resume.html">
+                    <button class="btn-cv">Download CV</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--Service Section-->
+    <section>
+        <div class="services" id="services">
+            <div class="services-text">
+                <!--used p tag for paragraph-->
+                <p>Services</p>
+                <p>Services Required</p>
+                <p>If you have any project or if you want to make a software or mobile application for your business contact with me.I will make it as soon as possible.</p>
+                <div class="box-container">
+                    <div class="box-1">
+                        <span>1</span>
+                        <!--used a span tag.in css i will style it using span tag-->
+                        <p class="heading">Web Development</p>
+                        <!--Used p tag for paragraph-->
+                        <p class="details">If you have any project or if you want to make a software or mobile application for your business contact with me.You really like my work.,if you don't I will change this until you like,I will give you best satisfaction result.</p>
+                        <button>Read More</button>
+                        <!--used button for add button.-->
+                    </div>
+                    <div class="box-2">
+                        <span>2</span>
+                        <p class="heading">Apps Development</p>
+                        <p class="details">If you have any project or if you want to make a software or mobile application for your business contact with me.You really like my work.,if you don't I will change this until you like,I will give you best satisfaction result.</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="box-3">
+                        <span>3</span>
+                        <p class="heading">UI/UX Design</p>
+                        <p class="details">If you have any project or if you want to make a software or mobile application for your business contact with me.You really like my work.,if you don't I will change this until you like,I will give you best satisfaction result.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!--Contact Section-->
+    <section>
+        <div class="contact" id="contact">
+            <p>If you have Any Project In Your Mind</p>
+            <a href="mailto:sbshowrav@gmail.com">
+                <button>Contact Me</button>
+            </a>
+        </div>
+    </section>
+    <!--Footer Section-->
+    <section>
+        <footer>
+            <p>Souhardo-Tech</p>
+            <p>I will make your project as soon as possible.If you don't I will change this until you like,I will give you best satisfaction </p>
+            <div class="social-icons">
+                <!--used a tag for add link.and i tag used for icon.Avobe,add fontawesome icon script css-->
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">Copyright by Souhardo-Tech</p>
+        </footer>
+    </section>
+    <!--Java script use for automation texts-->
+    <script>
+        /*Decleare and asssign variable*/
+        var texts = ["Developer","Designer","Programmer","Freelancer"];
+        var count=0;
+        var index=0;
+        var currenttext="";
+        var letter="";
+         /*Create a function.*/
+        (function type(){
+             /*Condition check comparing with texts array length.*/
+            if(count===texts.length)
+            {
+                count=0;
+            }
+            currenttext=texts[count];
+            letter=currenttext.slice(0,index++);
+            document.querySelector(".typing").textContent=letter;
+            if(letter.length===currenttext.length){
+                 count++;
+                 index=0;
+            }
+            setTimeout(type,200);
+ 
+        }());
+
+    </script>
+    
+    
+</body>
+</html>

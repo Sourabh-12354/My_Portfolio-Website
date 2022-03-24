@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me</title>
+    <link rel="stylesheet" href="hire.css">
+    <script src="hire.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>Payment Getway</h1>
+    <!--this ia payment-->
+    <img src="images/hire-me.jpg"  style="float: left; margin-top: 20px; border-radius: 50%;" width="30%">
+    <div class="container">
+        <form class="card">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter Your First Name:"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name:"><br>
+            <label for="prname">Project name:</label>
+            <input type="text" id="prname" name="prname" placeholder="Enter Your Project Name:"><br>
+            <label for="prname">Project Details:</label>
+            <textarea name="projectdetails" id="projectdetails" cols="40" rows="3" placeholder="Write Project Details.."></textarea>
+            <label for="packages">Packages:</label><br>
+            <input type="radio" name="packages" id="silver" value="Silver: 10$">
+            <label for="silver">Silver(10$)</label>
+            <input type="radio" name="packages" id="gold" value="Gold: 15$">
+            <label for="gold">Gold(15$)</label>
+            <input type="radio" name="packages" id="diamond" value="Diamond: 30$">
+            <label for="diamond">Diamond(30$)</label><br>
+            <label for="payment" id="choose">Choose Payment Method:</label>
+            <select id="payments">
+                <option value="bKash">Bkash</option>
+                <option value="Nogod">Nogod</option>
+                <option value="Rocket">Rocket</option>
+            </select>
+            <br>
+            <label for="transaction">Transaction-Id:</label><br>
+            <input type="text" id="transaction" placeholder="Enter Transaction ID:">
+            <br><br>
+            <input type="submit" class="hire" value="Hire Me" onclick="submitBtn()">
+        </form> 
+    </div>
+    <img src="images/hire-me.jpg" style="float: right; margin-top: 20px; border-radius: 50%;" width="30%">
+    
+</body>
+</html>

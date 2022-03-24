@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login">
+        <form action="login_page.php" method="POST">
+            <img src="images/Google (2).png" alt="Google" >
+            <h1>Sign In</h1>
+            <legend>Use Your Google Account</legend>
+            <br>
+            <label for="email" id="email_label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="someone@gmail.com">
+            <span><?php echo $emailErr;?></span></br></br>
+            <label id="password_label" for="password">Password:</label>
+            <input id="password" name="password" type="password" class="form-control" placeholder="Enter Password.."/>
+            <span><?php echo $passErr;?></span></br><br>
+            <input type="submit" id="login" name="submit" value="Login"></br></br>
+            <p>Haven't Any Account.Register here. <span><input type="button" onclick="location.href='signup.html';" id ="signup" value="Register" /></span></p>
+            
+        </form>
+    </div>
+</body>
+</html>

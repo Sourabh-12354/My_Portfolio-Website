@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkgoldenrod;
+}
+h1{
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+.container{
+    float: left;
+    margin-right: auto;
+    width: 40%;
+    text-align: center;
+}
+
+.card{
+    background-color: brown;
+    padding: 20px;
+    width: 350px;
+    height: 520px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0,0, 0.2);
+}
+#fname,#lname,#prname,#projectdetails,#choose,#payments,#transaction{
+    padding-top: 5px;
+    width: 200px;
+    border-color: gold;
+    margin: 0 30px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+}
+label{
+    font-weight: bold;
+    line-height: 2;
+}
+.hire{
+    height: 6%;
+    width: 30%;
+    font-size: 20px;
+    border: black;
+    font-weight: bold;
+    background-color: gold;
+    border-radius: 5px;
+}

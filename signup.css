@@ -1,0 +1,45 @@
+body{
+    background-color: goldenrod;
+}
+form{
+    background-color: darkgrey;
+    padding-top: 2px;
+    width: 400px;
+    height: 590px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 25px auto;
+    text-align: center;
+    border-radius: 15px;
+}
+.fname,.lname,.email,.number,.date,.password{
+    margin-top: 5px;
+    font-size: medium;
+    width: 200px;
+    height: 25px;
+}
+#security{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.answer{
+    margin: 5px;
+    font-size: medium;
+    width: 200px;
+    height: 25px;
+}
+#register{
+    margin: 5px;
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    background-color: goldenrod;
+}
+label{
+    font-weight: bold;
+    font-size: 18px;
+}
+img{
+    float: left;
+    width: 30%;
+    height: 590px;
+}
